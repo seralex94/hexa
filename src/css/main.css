@@ -22,9 +22,9 @@
 
 .carousel-bg {
   position: absolute;
-  background: -webkit-linear-gradient(350deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
-  background: -o-linear-gradient(350deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
-  background: linear-gradient(100deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
+  background: -webkit-linear-gradient(340deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
+  background: -o-linear-gradient(340deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
   z-index: 1;
   top: 0;
   left: 0;
@@ -60,11 +60,26 @@
     font-size: 14px;
     text-transform: uppercase;
     line-height: 10px; }
+    .nav-col:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 16px;
+      background: #cccccc;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .nav-col:last-child:after {
+      display: none; }
 
 .title {
   position: absolute;
   top: 75px;
-  left: 10%;
+  left: 5%;
+  margin-left: 15px;
   z-index: 2;
   font-family: Intro;
   font-size: 90px;
@@ -80,30 +95,97 @@
     .title-text:before {
       content: "";
       position: absolute;
-      width: 185%;
-      height: 480%;
-      top: -50%;
-      left: -50%;
+      width: 100%;
+      height: 300%;
+      top: -95%;
+      left: 0;
       z-index: -1;
       background: rgba(255, 255, 255, 0.7);
-      -webkit-transform: rotate(-75deg);
-          -ms-transform: rotate(-75deg);
-              transform: rotate(-75deg); }
+      -webkit-transform: rotate(20deg);
+          -ms-transform: rotate(20deg);
+              transform: rotate(20deg); }
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 2;
+  margin-top: 25px;
+  margin-left: 15px; }
+  .content-text {
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .content-btn {
+    border: 2px solid #ffffff;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff4f58), to(#fd7048));
+    background-image: -webkit-linear-gradient(bottom, #ff4f58 0%, #fd7048 100%);
+    background-image: -o-linear-gradient(bottom, #ff4f58 0%, #fd7048 100%);
+    background-image: linear-gradient(to top, #ff4f58 0%, #fd7048 100%);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 11px 18px 12px 17px; }
+
+.controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 246px;
+  height: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  margin-left: 15px; }
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important; }
+
+.right-arrow, .left-arrow {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%); }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 50% !important;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  margin: 0 !important; }
 
 .caption {
   position: absolute;
-  left: 9%;
-  top: 35%; }
+  left: 5%;
+  top: 200px; }
   .caption-name {
     position: relative;
     overflow: hidden;
     color: #000000;
     font-family: "Intro - Black";
     font-size: 36px;
+    line-height: 36px;
     font-weight: 900;
-    font-style: italic;
     padding: 8px 60px 13px 65px;
-    z-index: 1; }
+    z-index: 1;
+    height: 60px;
+    -webkit-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+            transform: skew(-20deg);
+    background: rgba(255, 255, 255, 0.7); }
     .caption-name:after {
       content: "";
       display: block;
@@ -114,52 +196,33 @@
               transform: translateX(-10%);
       height: 3px;
       background: #000; }
-    .caption-name:before {
-      content: "";
-      position: absolute;
-      width: 88%;
-      height: 205%;
-      bottom: -45%;
-      left: 5%;
-      z-index: -1;
-      background: rgba(255, 255, 255, 0.7);
-      -webkit-transform: rotate(10deg);
-          -ms-transform: rotate(10deg);
-              transform: rotate(10deg); }
   .caption-price {
     position: relative;
-    overflow: hidden;
-    height: 50px;
     color: #ffffff;
     font-family: "Intro - Black";
     font-size: 18px;
+    line-height: 48px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
     margin-top: 25px;
-    margin-left: -10px;
-    padding: 4px 31px 4px 57px;
-    z-index: 1;
-    line-height: 45px; }
-    .caption-price:before {
-      content: "";
-      position: absolute;
-      width: 88%;
-      height: 205%;
-      bottom: -45%;
-      left: 5%;
-      z-index: -1;
-      background: -webkit-gradient(linear, left top, right top, from(#2aeb2a), to(#007500));
-      background: -webkit-linear-gradient(left, #2aeb2a 0%, #007500 100%);
-      background: -o-linear-gradient(left, #2aeb2a 0%, #007500 100%);
-      background: linear-gradient(to right, #2aeb2a 0%, #007500 100%);
-      -webkit-transform: rotate(10deg);
-          -ms-transform: rotate(10deg);
-              transform: rotate(10deg); }
+    margin-left: 10px;
+    -webkit-transform: skew(-20deg);
+        -ms-transform: skew(-20deg);
+            transform: skew(-20deg);
+    -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75);
+    background: -webkit-gradient(linear, left top, right top, from(#2aeb2a), to(#007500));
+    background: -webkit-linear-gradient(left, #2aeb2a 0%, #007500 100%);
+    background: -o-linear-gradient(left, #2aeb2a 0%, #007500 100%);
+    background: linear-gradient(to right, #2aeb2a 0%, #007500 100%); }
     .caption-price__numb {
       font-size: 45px;
       font-weight: 900;
       padding: 0 5px; }
 
 .advantages {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
