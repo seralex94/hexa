@@ -1,0 +1,168 @@
+@import url(../css/normalize.css);
+.header-col__logo {
+  color: #040404;
+  font-family: "Proxima Nova";
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  line-height: 30px; }
+
+.header-col__info {
+  color: #000000;
+  font-family: "Proxima Nova";
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-bottom: 13px; }
+
+.carousel-bg {
+  position: absolute;
+  background: -webkit-linear-gradient(350deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
+  background: -o-linear-gradient(350deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.4) 40%, transparent 40%, transparent 60%);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.carousel-control {
+  z-index: 2; }
+
+.caption {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); }
+  .nav-row {
+    max-width: 1170;
+    margin: 0 auto; }
+  .nav-main {
+    font-weight: 700; }
+  .nav-col {
+    padding: 13px 0 10px 0;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 10px; }
+
+.title {
+  position: absolute;
+  top: 75px;
+  left: 10%;
+  z-index: 2;
+  font-family: Intro;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 68.62px;
+  text-transform: uppercase;
+  letter-spacing: -1.55px;
+  padding: 23px 45px 21px 35px;
+  overflow: hidden; }
+  .title-text {
+    position: relative;
+    color: #000000; }
+    .title-text:before {
+      content: "";
+      position: absolute;
+      width: 185%;
+      height: 480%;
+      top: -50%;
+      left: -50%;
+      z-index: -1;
+      background: rgba(255, 255, 255, 0.7);
+      -webkit-transform: rotate(-75deg);
+          -ms-transform: rotate(-75deg);
+              transform: rotate(-75deg); }
+
+.caption {
+  position: absolute;
+  left: 9%;
+  top: 35%; }
+  .caption-name {
+    position: relative;
+    overflow: hidden;
+    color: #000000;
+    font-family: "Intro - Black";
+    font-size: 36px;
+    font-weight: 900;
+    font-style: italic;
+    padding: 8px 60px 13px 65px;
+    z-index: 1; }
+    .caption-name:after {
+      content: "";
+      display: block;
+      width: 120%;
+      right: 50%;
+      -webkit-transform: translateX(-10%);
+          -ms-transform: translateX(-10%);
+              transform: translateX(-10%);
+      height: 3px;
+      background: #000; }
+    .caption-name:before {
+      content: "";
+      position: absolute;
+      width: 88%;
+      height: 205%;
+      bottom: -45%;
+      left: 5%;
+      z-index: -1;
+      background: rgba(255, 255, 255, 0.7);
+      -webkit-transform: rotate(10deg);
+          -ms-transform: rotate(10deg);
+              transform: rotate(10deg); }
+  .caption-price {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    color: #ffffff;
+    font-family: "Intro - Black";
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: -10px;
+    padding: 4px 31px 4px 57px;
+    z-index: 1;
+    line-height: 45px; }
+    .caption-price:before {
+      content: "";
+      position: absolute;
+      width: 88%;
+      height: 205%;
+      bottom: -45%;
+      left: 5%;
+      z-index: -1;
+      background: -webkit-gradient(linear, left top, right top, from(#2aeb2a), to(#007500));
+      background: -webkit-linear-gradient(left, #2aeb2a 0%, #007500 100%);
+      background: -o-linear-gradient(left, #2aeb2a 0%, #007500 100%);
+      background: linear-gradient(to right, #2aeb2a 0%, #007500 100%);
+      -webkit-transform: rotate(10deg);
+          -ms-transform: rotate(10deg);
+              transform: rotate(10deg); }
+    .caption-price__numb {
+      font-size: 45px;
+      font-weight: 900;
+      padding: 0 5px; }
+
+.advantages {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; }
+  .advantages-col {
+    height: 279px; }
