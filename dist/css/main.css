@@ -287,7 +287,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .header-col__numb {
-    font-size: 30px; }
+    font-size: 29px; }
   .header-col__btn {
     font-size: 11px; }
   .navbar-nav li {
@@ -372,7 +372,8 @@ body {
       margin-top: 2px; }
     .header-col__btn {
       padding: 5px;
-      margin-top: 0; }
+      margin-top: 3px;
+      font-size: 9px; }
   .caption {
     top: 80px; }
     .caption-name {
