@@ -1,7 +1,7 @@
 @import url(../css/normalize.css);
 @font-face {
   font-family: 'Proxima Nova';
-  src: url("../fonts/ProximaNovaCond-Regular.ttf"); }
+  src: url("../fonts/ProximaNova-Regular.ttf"); }
 
 body {
   font-family: "Proxima Nova", "Arial", sans-serif; }
@@ -286,8 +286,12 @@ body {
         padding: 19px 10px; }
 
 @media (min-width: 768px) {
+  .header-col__numb {
+    font-size: 30px; }
   .navbar-nav li {
     padding: 5px; }
+  .nav-col {
+    font-size: 12px; }
   .title {
     top: 50px;
     font-size: 40px;

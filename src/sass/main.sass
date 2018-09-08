@@ -1,14 +1,13 @@
 @import url(../css/normalize.css)
 @font-face
      font-family: 'Proxima Nova'
-     src: url('../fonts/ProximaNovaCond-Regular.ttf')
+     src: url('../fonts/ProximaNova-Regular.ttf')
 body
 	font-family: "Proxima Nova", "Arial", sans-serif
 
 .header-col
 	&__logo
 		color: #040404
-		// font-family: "Proxima Nova"
 		font-size: 30px
 		font-weight: bold
 		text-transform: uppercase
@@ -18,7 +17,6 @@ body
 		line-height: 30px
 	&__info
 		color: #000000
-		// font-family: "Proxima Nova"
 		text-align: center
 		font-size: 13px
 		font-weight: 400
@@ -27,7 +25,6 @@ body
 		padding-bottom: 13px
 	&__numb
 		color: #000000
-		// font-family: "Proxima Nova"
 		font-size: 35px
 		font-weight: 700
 		line-height: 21px
@@ -38,7 +35,6 @@ body
 		border-radius: 3px
 		background: linear-gradient(to top, #ff4f58 0%, #fd7048 100%)
 		color: #ffffff
-		// font-family: "Proxima Nova"
 		font-size: 13px
 		font-weight: 700
 		padding: 10px
@@ -72,15 +68,7 @@ body
 		border: none
 	&-nav
 		float: none
-	// text-align: center
-	// background: rgba(0,0,0, 0.6);
-	// &-row
-	// 	max-width: 1170px
-	// 	margin: 0 auto
-	// &-main
-	// 	font-weight: 700
 .nav-col
-	// font-family: "Proxima Nova", "Arial", sans-serif
 	font-size: 14px
 	text-transform: uppercase
 	line-height: 10px
@@ -141,7 +129,6 @@ body
 	margin-left: 15px
 	&-text
 		color: #ffffff
-		// font-family: "Proxima Nova"
 		font-size: 19px
 		font-weight: 700
 		text-transform: uppercase
@@ -193,7 +180,6 @@ body
 		position: relative
 		overflow: hidden
 		color: #000000
-		// font-family: 'NTR', 'Arial', sans-serif
 		font-size: 36px
 		line-height: 36px
 		font-weight: 900
@@ -213,7 +199,6 @@ body
 	&-price
 		position: relative
 		color: #ffffff
-		// font-family: 'NTR', 'Arial', sans-serif
 		font-size: 18px
 		line-height: 48px
 		width: 150px
@@ -246,19 +231,24 @@ body
 		align-items: center
 		&__info
 			color: #000000
-			// font-family: "Proxima Nova"
 			font-size: 16px
 			font-weight: 400
 			& h3
-				// font-family: "Proxima Nova Rg"
 				font-size: 22px
 				font-weight: 700
 				padding: 19px 10px
 
 
 @media (min-width: 768px)
+
+	.header-col__numb
+		font-size: 30px
+
 	.navbar-nav li 
 	    padding: 5px
+
+	.nav-col
+		font-size: 12px
 
 	.title
 		top: 50px
