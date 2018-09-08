@@ -284,3 +284,128 @@ body {
         font-size: 22px;
         font-weight: 700;
         padding: 19px 10px; }
+
+@media (min-width: 768px) {
+  .navbar-nav li {
+    padding: 5px; }
+  .title {
+    top: 50px;
+    font-size: 40px;
+    padding-top: 14px; }
+  .caption {
+    left: 8%;
+    top: 120px; }
+    .caption-name {
+      font-size: 24px; }
+  .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    top: 200px; }
+    .content-btn {
+      font-size: 18px;
+      line-height: 1.24;
+      padding: 5px 12px;
+      width: inherit;
+      margin-right: 5px; }
+    .content-text {
+      margin-bottom: 0; }
+  .controls {
+    bottom: 0;
+    top: 250px; }
+  .advantages {
+    position: relative; } }
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0;
+    float: right; }
+  .navbar-nav li a {
+    line-height: 1.24;
+    padding: 0; }
+  .navbar-inverse .navbar-nav li a, .nav li {
+    padding: 0; }
+  .nav-col {
+    font-size: 10px; }
+    .nav-col:after {
+      display: none; }
+  .title {
+    top: 40px;
+    left: 0;
+    margin: 0;
+    font-size: 20px;
+    padding-top: 10px; }
+  .header-col {
+    padding-bottom: 5px; }
+    .header-col__numb {
+      font-size: 25px;
+      padding: 0;
+      margin-top: 2px; }
+    .header-col__btn {
+      padding: 5px;
+      margin-top: 0; }
+  .caption {
+    top: 80px; }
+    .caption-name {
+      font-size: 10px;
+      line-height: 1.24;
+      padding: 4px 20px 0px 20px;
+      height: 30px; }
+    .caption-price {
+      font-size: 14px;
+      line-height: 1.24;
+      width: 100px;
+      height: 24px; }
+      .caption-price__numb {
+        font-size: 25px; }
+  .content {
+    top: 17%;
+    left: 50%;
+    margin: 0;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .content-text {
+      text-align: center;
+      color: #000;
+      margin-bottom: 5px; }
+  .controls {
+    bottom: 0;
+    top: 250px;
+    left: 50%;
+    margin: 0;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .carousel-indicators li {
+    background: transparent;
+    border-color: #d7d2d1; }
+  .carousel-indicators .active {
+    background: #d7d2d1;
+    border: transparent; }
+  .advantages {
+    position: relative;
+    top: 170px; } }

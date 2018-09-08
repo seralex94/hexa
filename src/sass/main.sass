@@ -254,3 +254,122 @@ body
 				font-size: 22px
 				font-weight: 700
 				padding: 19px 10px
+
+
+@media (min-width: 768px)
+	.navbar-nav li 
+	    padding: 5px
+
+	.title
+		top: 50px
+		font-size: 40px
+		padding-top: 14px
+
+	.caption
+		left: 8%
+		top: 120px
+		&-name
+			font-size: 24px
+
+	.content
+		display: flex
+		align-items: center
+		flex-direction: row-reverse
+		top: 200px
+		&-btn
+			font-size: 18px
+			line-height: 1.24
+			padding: 5px 12px
+			width: inherit
+			margin-right: 5px
+		&-text
+			margin-bottom: 0
+
+	.controls
+		bottom: 0
+		top: 250px
+
+	.advantages
+		position: relative
+
+@media (max-width: 767px)
+
+	.navbar-nav
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		margin: 0
+		float: right
+
+	.navbar-nav li a
+		line-height: 1.24
+		padding: 0
+
+	.navbar-inverse .navbar-nav li a, .nav li
+		padding: 0
+
+	.nav-col
+		font-size: 10px
+		&:after
+			display: none
+
+	.title
+		top: 40px
+		left: 0
+		margin: 0
+		font-size: 20px
+		padding-top: 10px
+
+	.header-col
+		padding-bottom: 5px
+		&__numb
+			font-size: 25px
+			padding: 0
+			margin-top: 2px
+		&__btn
+			padding: 5px
+			margin-top: 0 
+
+	.caption
+		top: 80px
+		&-name
+			font-size: 10px
+			line-height: 1.24
+			padding: 4px 20px 0px 20px
+			height: 30px
+		&-price
+			font-size: 14px
+			line-height: 1.24
+			width: 100px
+			height: 24px
+			&__numb
+			 	font-size: 25px
+
+	.content
+		top: 17%
+		left: 50%
+		margin: 0
+		transform: translateX(-50%)
+		&-text
+			text-align: center
+			color: #000
+			margin-bottom: 5px
+
+	.controls
+		bottom: 0
+		top: 250px
+		left: 50%
+		margin: 0
+		transform: translateX(-50%)
+
+	.carousel-indicators 
+		& li
+			background: transparent
+			border-color: #d7d2d1
+		& .active
+			background: #d7d2d1
+			border: transparent
+
+	.advantages
+		position: relative
+		top: 170px
