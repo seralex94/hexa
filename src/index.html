@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hexa</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="css/bootstrap.css" rel="stylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
   </head>
   <body>
       <div class="container">
@@ -15,93 +15,129 @@
           <div class="header-col col-lg-4">
             <div class="row">
               <div class="header-col__logo col-lg-3">logo</div>
-              <div class="header-col__info col-lg-9">Фабрика фотообоев в КИЕВЕ изготовЛение фотообоев</div>
+              <div class="header-col__info col-lg-8">Фабрика фотообоев в КИЕВЕ изготовЛение фотообоев</div>
             </div>
           </div>
           <div class="header-col col-lg-4 col-lg-offset-4">
             <div class="header-col__numb col-lg-8">044 278 21 00</div>
-            <div class="header-col__btn col-lg-4">Обратный звонок</div>
+            <input type="button" class="header-col__btn col-lg-4" value="Обратный звонок"></input>
           </div>
         </div>
-        
       </div>
-
-      <div id="carousel" class="carousel slide">
-        <div class="container-fluid nav">
-          <div class="nav-row row">
-            <div class="nav-col nav-main col-lg-2 col-lg-offset-1">главная</div>
-            <div class="nav-col col-lg-2">для детcкой</div>
-            <div class="nav-col col-lg-2">для спальни</div>
-            <div class="nav-col col-lg-2">для кухни</div>
-            <div class="nav-col col-lg-2">контакты</div>
-          </div>
-        </div>
-        
-        <div class="title">
-          <span class="title-text">фотообои</span>
-        </div>
-        <div class="content">
-          <div class="content-text">Более 6000 идей фотообоев <br> для ГОСТИНОЙ
-          </div>
-          <input type="button" class="content-btn" value="Смотреть идеи">
-        </div>
-
-        <div class="controls">
-          <a href="#carousel" class="left carousel-control" data-slide="prev">
-            <img src="img/arrow_left.png" alt="" class="left-arrow">
-          </a>
-          <ol class="carousel-indicators">
-            <li class="active" data-target="#carousel" data-slide-to="0"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-          </ol>
-          <a href="#carousel" class="right carousel-control" data-slide="next">
-            <img src="img/arrow_right.png" alt="" class="right-arrow">
-          </a>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-bg"></div>
-          <div class="item active">
-            <img src="img/bedroom1.png" alt="">
-            <div class="caption">
-              <h3 class="caption-name">Для гостинной</h3>
-              <div class="caption-price">от <span class="caption-price__numb">50</span> $/м2</div>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="carousel" class="carousel slide">
+            <div class="navbar navbar-inverse">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                    
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="responsive-menu">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-col col-lg-2 col-lg-offset-1"><a class="nav-col-main" href="#">главная</a></li>
+                    <li class="nav-col col-lg-2"><a href="#">для детcкой</a></li>
+                    <li class="nav-col col-lg-2"><a href="#">для спальни</a></li>
+                    <li class="nav-col col-lg-2"><a href="#">для кухни</a></li>
+                    <li class="nav-col col-lg-2"><a href="#">контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="title">
+                <span class="title-text">фотообои</span>
+              </div>
+              <div class="content">
+                <div class="content-text">Более 6000 идей фотообоев <br> для ГОСТИНОЙ
+                </div>
+                <input type="button" class="content-btn" value="Смотреть идеи">
+              </div>
+              <div class="controls">
+                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                  <img src="img/arrow_left.png" alt="" class="left-arrow">
+                </a>
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <a href="#carousel" class="right carousel-control" data-slide="next">
+                  <img src="img/arrow_right.png" alt="" class="right-arrow">
+                </a>
+              </div>
+            </div>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/bedroom1.png" alt="">
+                <div class="caption">
+                  <h3 class="caption-name">Для гостинной</h3>
+                  <div class="caption-price">от <span class="caption-price__numb">50</span> $/м2</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/livingroom1.png" alt="">
+                <div class="caption">
+                  <h3 class="caption-name">Для спальни</h3>
+                  <div class="caption-price">от <span class="caption-price__numb">60</span> $/м2</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/kitchen1.png" alt="">
+                <div class="caption">
+                  <h3 class="caption-name">Для кухни</h3>
+                  <div class="caption-price">от <span class="caption-price__numb">55</span> $/м2</div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid advantages">
+              <div class="row">
+                <div class="container">
+                  <div class="advantages-col col-lg-3">
+                    <div class="advantages-col__img">
+                      <img src="img/pictures.png" alt="">
+                    </div>
+                    <div class="advantages-col__info">
+                      <h3>Печатаем что угодно</h3>
+                      <p>Все фотообои мы изготавливаем под заказ на собственном оборудовании. По этому можем напечатать совершенно все, что вы захотите</p>
+                    </div>
+                  </div>
+                  <div class="advantages-col col-lg-3">
+                    <div class="advantages-col__img">
+                      <img src="img/size.png" alt="">
+                    </div>
+                    <div class="advantages-col__info">
+                      <h3>Любые размеры</h3>
+                      <p>Профессиональное оборудование позволяет напечатать фотообои совершенно любого размера. Можем заклеить как часть, таки все стену без ограничений.</p>
+                    </div>
+                  </div>
+                  <div class="advantages-col col-lg-3">
+                    <div class="advantages-col__img">
+                      <img src="img/calendar.png" alt="">
+                    </div>
+                    <div class="advantages-col__info">
+                      <h3>Изготовление за 1 день</h3>
+                      <p>В среднем, изготовление одних фотообоев среднего размера занимает не более одного дня!</p>
+                    </div>
+                  </div>
+                  <div class="advantages-col col-lg-3">
+                    <div class="advantages-col__img">
+                      <img src="img/hands.png" alt="">
+                    </div>
+                    <div class="advantages-col__info">
+                      <h3>Без посредников</h3>
+                      <p>Мы имеем в наличие все необходимое оборудование для самостоятельного изготовления фотообоев. А значит вы не переплачиваете посредникам.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <img src="img/livingroom1.png" alt="">
-            <div class="caption">
-              <h3 class="caption-name">Для спальни</h3>
-              <div class="caption-price">от <span class="caption-price__numb">60</span> $/м2</div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/kitchen1.png" alt="">
-            <div class="caption">
-              <h3 class="caption-name">Для кухни</h3>
-              <div class="caption-price">от <span class="caption-price__numb">55</span> $/м2</div>
-            </div>
-          </div>
-          
         </div>
-
-        
-        <!-- <div class="carousel-bg"></div> -->
-
-        <!-- <div class="container advantages">
-          <div class="row">
-            <div class="advantages-col col-lg-3">1</div>
-            <div class="advantages-col col-lg-3">2</div>
-            <div class="advantages-col col-lg-3">3</div>
-            <div class="advantages-col col-lg-3">4</div>
-          </div>
-        </div> -->
       </div>
- 
+      
     <script type="text/javascript" src="js/libs.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <!-- <script type="text/javascript" src="js/custom.js"></script> -->
-    
+    <script src="js/bootstrap.js"></script>    
   </body>
 </html>

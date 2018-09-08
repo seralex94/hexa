@@ -1,30 +1,55 @@
 @import url(../css/normalize.css)
-
-
+@font-face
+     font-family: 'Proxima Nova'
+     src: url('../fonts/ProximaNovaCond-Regular.ttf')
+body
+	font-family: "Proxima Nova", "Arial", sans-serif
 
 .header-col
 	&__logo
 		color: #040404
-		font-family: "Proxima Nova"
+		// font-family: "Proxima Nova"
 		font-size: 30px
 		font-weight: bold
 		text-transform: uppercase
 		letter-spacing: 6px
-		padding-top: 17px
-		padding-bottom: 17px
+		padding-top: 12px
+		padding-bottom: 12px
 		line-height: 30px
 	&__info
 		color: #000000
-		font-family: "Proxima Nova"
+		// font-family: "Proxima Nova"
 		text-align: center
 		font-size: 13px
 		font-weight: 400
 		text-transform: uppercase
-		padding-top: 18px
+		padding-top: 15px
 		padding-bottom: 13px
+	&__numb
+		color: #000000
+		// font-family: "Proxima Nova"
+		font-size: 35px
+		font-weight: 700
+		line-height: 21px
+		text-transform: uppercase
+		padding-top: 18px
+	&__btn
+		border: none
+		border-radius: 3px
+		background: linear-gradient(to top, #ff4f58 0%, #fd7048 100%)
+		color: #ffffff
+		// font-family: "Proxima Nova"
+		font-size: 13px
+		font-weight: 700
+		padding: 10px
+		margin-top: 12px
 
 .carousel
-	&-bg
+	height: 100vh
+	min-height: 830px
+	&-inner:after
+		content: ''
+		display: block
 		position: absolute
 		background: linear-gradient(110deg, rgba(0,0,0, 0.4) 40%, transparent 40%, transparent 60%)
 		z-index: 1
@@ -35,56 +60,64 @@
 	&-control
 		z-index: 2
 
-.caption
-	display: flex
-
-.nav
-	position: absolute
+.navbar
+	position: absolute 
 	top: 0
 	left: 0
 	right: 0
 	z-index: 999
+	min-height: 35px
+	&-inverse
+		background-color: rgba(0, 0, 0, 0.4) 
+		border: none
+	&-nav
+		float: none
+	// text-align: center
+	// background: rgba(0,0,0, 0.6);
+	// &-row
+	// 	max-width: 1170px
+	// 	margin: 0 auto
+	// &-main
+	// 	font-weight: 700
+.nav-col
+	// font-family: "Proxima Nova", "Arial", sans-serif
+	font-size: 14px
+	text-transform: uppercase
+	line-height: 10px
 	text-align: center
-	background: rgba(0,0,0, 0.6);
-	&-row
-		max-width: 1170
-		margin: 0 auto
+	&:after
+		content: ''
+		display: block
+		width: 1px
+		height: 16px
+		background: #cccccc
+		position: absolute			
+		top: 50%
+		left: 100%
+		transform: translateY(-50%)
+	&:last-child:after
+			display: none
 	&-main
 		font-weight: 700
-	&-col
-		padding: 13px 0 10px 0
-		color: #ffffff;
-		font-family: "Proxima Nova";
-		font-size: 14px;
-		text-transform: uppercase;
-		line-height: 10px
-		&:after
-			content: ''
-			display: block
-			width: 1px
-			height: 16px
-			background: #cccccc
-			position: absolute
-			top: 50%
-			left: 100%
-			transform: translateY(-50%)
-		&:last-child:after
-			display: none
+
+.nav > li > a 
+	padding: 7px 5px
+
+.navbar-inverse .navbar-nav > li > a
+	color: #ffffff
 
 
 .title
 	position: absolute
-	top: 75px
+	top: 5%
 	left: 5%
 	margin-left: 15px
 	z-index: 2
-	font-family: Intro;
-	font-size: 90px;
-	font-weight: 400;
-	line-height: 68.62px;
-	text-transform: uppercase;
-	letter-spacing: -1.55px;
-	padding: 23px 45px 21px 35px
+	font-size: 90px
+	text-transform: uppercase
+	letter-spacing: -1.55px
+	padding: 23px 45px 0 35px
+	font-family: 'NTR', 'Arial', sans-serif
 	overflow: hidden
 	&-text
 		position: relative
@@ -102,14 +135,13 @@
 
 .content
 	position: absolute
-	top: 50%
+	top: 30%
 	left: 5%
 	z-index: 2
-	margin-top: 25px
 	margin-left: 15px
 	&-text
 		color: #ffffff
-		font-family: "Proxima Nova"
+		// font-family: "Proxima Nova"
 		font-size: 19px
 		font-weight: 700
 		text-transform: uppercase
@@ -119,19 +151,19 @@
 		background-image: linear-gradient(to top, #ff4f58 0%, #fd7048 100%)
 		border-radius: 3px
 		color: #ffffff
-		font-family: "Proxima Nova"
+		width: 246px
 		font-size: 23px
 		font-weight: 700
 		line-height: 26px
 		text-transform: uppercase
-		padding: 11px 18px 12px 17px
+		padding: 11px 0
 
 .controls
 	display: flex
 	width: 246px
 	height: 50px
 	position: absolute
-	bottom: 10%
+	bottom: 50%
 	left: 5%
 	margin-left: 15px
 
@@ -152,14 +184,16 @@
 	margin: 0 !important
 
 .caption
+	display: flex
 	position: absolute
 	left: 5%
-	top: 200px
+	top: 185px
+	font-family: 'NTR', 'Arial', sans-serif
 	&-name
 		position: relative
 		overflow: hidden
 		color: #000000
-		font-family: "Intro - Black"
+		// font-family: 'NTR', 'Arial', sans-serif
 		font-size: 36px
 		line-height: 36px
 		font-weight: 900
@@ -179,13 +213,13 @@
 	&-price
 		position: relative
 		color: #ffffff
-		font-family: "Intro - Black"
+		// font-family: 'NTR', 'Arial', sans-serif
 		font-size: 18px
 		line-height: 48px
 		width: 150px
 		height: 50px
 		text-align: center
-		margin-top: 25px
+		margin-top: 5px
 		margin-left: 10px
 		transform: skew(-20deg)
 		box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.75)
@@ -196,10 +230,27 @@
 			padding: 0 5px
 			
 .advantages
-	position: relative
-	bottom: 0
+	position: absolute
 	left: 0
 	right: 0
-	z-index: 999
+	bottom: 0
+	background: #fff
+	opacity: 0.8
+	z-index: 1
+	margin-bottom: 15px
 	&-col
-		height: 279px
+		margin-top: 15px
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__info
+			color: #000000
+			// font-family: "Proxima Nova"
+			font-size: 16px
+			font-weight: 400
+			& h3
+				// font-family: "Proxima Nova Rg"
+				font-size: 22px
+				font-weight: 700
+				padding: 19px 10px
