@@ -288,6 +288,8 @@ body {
 @media (min-width: 768px) {
   .header-col__numb {
     font-size: 30px; }
+  .header-col__btn {
+    font-size: 11px; }
   .navbar-nav li {
     padding: 5px; }
   .nav-col {
